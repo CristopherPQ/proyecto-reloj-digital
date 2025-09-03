@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'clockicons';
+    src: url("../fonts/clockicons.ttf") format('truetype');
+}
+
+:root {
+    --text-color: #f0f0f0;
+    --header-color: #1976d2;
+    --background-color: #f5f7fa;
+    --acent-color: #37474f;
+    --footer-color: #1976d2;
+}
+
+/* Modo oscuro */
+.dark-mode {
+    --text-color: #f0f0f0;
+    --header-color: #3d3c3c;
+    --background-color: #0f0f0f;
+    --acent-color: #FF9500;
+    --footer-color: #3d3c3c;
+}
+
+/* Transicion */
+body, header, .bi, .main-content, footer {
+    transition: background-color 0.5s ease, color 0.5s ease;
+} 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--header-color);
+    color: var(--text-color);
+}
+
+#title {
+    cursor: pointer;
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.navbar-header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bi {
+    color: var(--text-color);
+    font-size: 2.5rem;
+}
+
+main {
+    height: 85vh;
+    width: 100%;
+}
+
+.main-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--acent-color);
+}
+
+.panel-time {
+    font-family: 'clockicons';
+    font-size: 7rem;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.panel-date {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 0.5rem;
+}
+
+footer {
+    height: 5vh;
+    width: 100%;
+    background-color: var(--footer-color);
+}
+
+.footer-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--text-color);
+}
