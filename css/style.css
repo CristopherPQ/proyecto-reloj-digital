@@ -97,7 +97,7 @@ main {
 }
 
 .panel-time {
-    font-family: 'clockicons';
+    font-family: 'clockicons', sans-serif;
     font-size: 7rem;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
